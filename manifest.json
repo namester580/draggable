@@ -1,0 +1,15 @@
+{
+  "manifest_version":2,
+  "name":"my extension",
+  "version":"1.0",
+  "content_scripts":[
+    {
+      "matches": ["http://*/*","https://*/*"],
+"background_page":"background.html",
+      "js": ["jquery-2.2.3.js","script.js","jquery-ui.min.js"]
+    }
+
+      ]
+
+
+}
