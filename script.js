@@ -10,9 +10,9 @@ var drg = false;
 
 
 
-
-    $('body').append('<div style="display:inline-block;top:0;position:fixed"><button id = "dragbut">make all elements draggable</button></div>');
-    $('#dragbut').click(function(){
+//make div stay in front
+   $('body').append('<div style="display:inline-block;top:0;position:fixed;z-index: 1101;"><button id = "dragbut" style = "background-color: #2b2b2b;color: white">make all elements draggable</button></div>');
+      $('#dragbut').click(function(){
       if(drg == false) {
           $('*').each(function () {
               $(this).draggable();
